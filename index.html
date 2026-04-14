@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Team 1 Brainstorm</title>
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <h2>Brainstorming Session</h2>
+      <h3>April 13, 2026</h3>
+      <p><em>Note:</em> <strong>Attendance is mandatory</strong></p>
+    </header>
+
+    <nav>
+      <a href="#attendance">Attendance</a><br>
+      <a href="#agenda">Agenda</a><br>
+      <a href="#unfinished">Unfinished Business</a><br>
+      <a href="#new">New Business</a><br>
+      <a href="#misc">Miscellaneous</a><br>
+      <a href="#media">Media</a><br>
+      <a href="#form-section">Form</a><br>
+    </nav>
+
+    <main>
+      <section id="attendance">
+        <p><b>Attendance</b></p>
+        <ul>
+          <li>Andrew</li>
+          <li>Cindy</li>
+          <li>Zoey</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <section id="agenda">
+        <p><span>Today's agenda:</span></p>
+        <ol>
+          <li>Choose a team name</li>
+          <li>Choose a team lead</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <section id="unfinished">
+        <p><b>Unfinished Business</b></p>
+        <p>The team still needs a team page.</p>
+      </section>
+
+      <hr>
+
+      <section id="new">
+        <p><b>New Business</b></p>
+        <p>The team discussed the project idea.</p>
+      </section>
+
+      <hr>
+
+      <section id="misc">
+        <p><b>Miscellaneous</b></p>
+        <p><i>Andrew</i> will be absent at the next meeting.</p>
+      </section>
+
+      <hr>
+
+      <section id="media">
+        <div>
+          <p><b>Meeting Diagram</b></p>
+          <img src="diagram.jpg" alt="Sketch of the Pomodoro timer app layout">
+        </div>
+
+        <p><b>Audio Recording</b></p>
+        <audio controls>
+          <source src="meeting-audio.mp3" type="audio/mpeg">
+        </audio>
+
+        <p><b>Video Recording</b></p>
+        <video controls width="320">
+          <source src="meeting-video.mp4" type="video/mp4">
+        </video>
+
+        <details>
+          <summary>Extra Meeting Notes</summary>
+          <p>The team wants the first version of the timer to be simple and easy to use.</p>
+        </details>
+      </section>
+
+      <hr>
+
+      <section id="form-section">
+        <h3>Feedback Form</h3>
+        <form>
+          <fieldset>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+            </p>
+
+            <p>
+              <label for="meeting-date">Next Meeting Date:</label>
+              <input type="date" id="meeting-date" name="meeting-date">
+            </p>
+
+            <p>Will you attend the next meeting?</p>
+            <input type="radio" id="yes" name="attendance-response" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="attendance-response" value="no">
+            <label for="no">No</label>
+
+            <p>What should we improve?</p>
+            <input type="checkbox" id="design" name="improve-design">
+            <label for="design">Design</label>
+
+            <input type="checkbox" id="features" name="improve-features">
+            <label for="features">Features</label>
+
+            <input type="checkbox" id="teamwork" name="improve-teamwork">
+            <label for="teamwork">Teamwork</label>
+
+            <p>
+              <label for="idea">Project idea:</label>
+              <input list="ideas" id="idea" name="idea">
+              <datalist id="ideas">
+                <option value="Pomodoro Timer"></option>
+                <option value="Task Tracker"></option>
+                <option value="Study Planner"></option>
+              </datalist>
+            </p>
+
+            <p>
+              <label for="role">Preferred role:</label>
+              <select id="role" name="role">
+                <option value="leader">Team Lead</option>
+                <option value="designer">Designer</option>
+                <option value="coder">Coder</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="comments">Additional comments:</label>
+            </p>
+            <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <p>Created by <span>Team 1</span></p>
+    </footer>
+  </body>
+</html>
